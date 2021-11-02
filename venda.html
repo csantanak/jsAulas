@@ -1,0 +1,43 @@
+<!-- Criar um software em JS.
+Onde:
+Entrada:
+->MODELO DO CARRO - Campo de text Ex.: [SANDERO]
+->PREÇO DO CARRO - Campo de text/number Ex.: [50000]
+
+
+SISTEMA DEVE MOSTRAR:
+->O VALOR DE ENTRADA QUE É DE 50%
+->O SALDO EM 60x*, 
+*cada parcela deve ser acrescida de 70% (juros)
+->MOSTRAR O SALDO FINAL 60*Valor da parcela -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="venda.js" async></script>
+</head>
+<body>
+    <div>
+        <h2>Financiamento de:<small>Veículos</small></h2>
+        <form name="cadastro">
+            <label for="preco">Modelo:</label>
+            <input type="text" name="modelo" id="modelo" required>
+            <br>
+            <label for="preco">Preço</label>
+            <input type="text" name="preco" id="preco" required>
+            <br>
+            <input type="button" value="Simular" id="btnCadastrar">
+        </form>
+    </div>
+        <hr>
+        <h2>Simulação</h2>
+        <div id="mostrarCadastro">
+        
+        </div>
+</body>
+</html>
